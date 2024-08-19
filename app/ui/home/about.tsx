@@ -31,7 +31,7 @@ export default function About() {
   return (
     <div className="bg-[#484848] w-full pl-6 pt-24 lg:pl-28 tracking-tighter pb-12 text-lg leading-8 gap-3 flex flex-col lg:flex-row">
       <div className="w-full max-w-[660px] text-white gap-7 flex flex-col pr-6 lg:pr-0">
-        <h2 className="text-xl sm:tex-2xl font-bold italic">
+        <h2 className="text-xl sm:text-2xl font-bold italic">
           <span className="text-[#ef8e5e]">EVERY GAME. </span>
           EVERY SPORT
         </h2>
@@ -47,19 +47,19 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-3 mt-5 mb-12">
           <div>
             <Link key={"about-Signup"} href={"/signup"}>
-              <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
+              <button className="text-white text-base bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
                 SIGN UP
               </button>
             </Link>
           </div>
           <div>
             <Link key={"try-generator"} href={"/"}>
-              <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-2">
+              <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
                 <FontAwesomeIcon
                   icon={faRightToBracket}
-                  className="size-7 self-center"
+                  className="size-6 self-center"
                 />
-                <span className="text-lg self-center">
+                <span className="text-base self-center">
                   TRY OUR BRACKET GENERATOR
                 </span>
               </button>
