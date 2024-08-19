@@ -10,16 +10,13 @@ export default function Feature() {
     <div className="bg-gradient-to-r from-[#3a3a3a] to-[#313131] w-full">
       <div className="bg-[url(https://assets.challonge.com/_next/static/media/section-background.7b05ad11.png)] bg-no-repeat ">
         <div className="flex flex-col lg:flex-row items-center max-w-[1600px] mx-auto gap-20 px-5 py-20 md:px-20">
-          <div className="min-w-[440px]">
+          <div className="min-w-0 md:min-w-[440px]">
             <Image
               src={"/image/video-placeholder.webp"}
               width={702}
               height={404}
               alt={"video placeholder"}
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
+            />
           </div>
           <div className="bot flex flex-col gap-5 tracking-tighter text-lg">
             <h2 className="Slogan text-3xl sm:text-5xl text-white italic font-bold">
@@ -54,7 +51,7 @@ export default function Feature() {
           </div>
         </div>
         <FeatureFormat />
-        <Partner/>
+        <Partner />
       </div>
     </div>
   );
