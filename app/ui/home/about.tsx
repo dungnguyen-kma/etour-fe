@@ -31,11 +31,11 @@ export default function About() {
   return (
     <div className="bg-[#484848] w-full pl-6 pt-24 lg:pl-28 tracking-tighter pb-12 text-lg leading-8 gap-3 flex flex-col lg:flex-row">
       <div className="w-full max-w-[660px] text-white gap-7 flex flex-col pr-6 lg:pr-0">
-        <h2 className="text-2xl font-bold italic">
+        <h2 className="text-xl sm:tex-2xl font-bold italic">
           <span className="text-[#ef8e5e]">EVERY GAME. </span>
           EVERY SPORT
         </h2>
-        <div className="text-7xl font-bold italic">
+        <div className="text-4xl sm:text-7xl font-bold italic">
           SIMPLIFIED TOURNAMENT MANAGEMENT
         </div>
         <div className=" text-[#b4b4b4]">
