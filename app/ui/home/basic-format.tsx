@@ -33,7 +33,7 @@ export default function BasicFormat() {
     },
     {
       id: 5,
-      src: "/image/feature-format/Leaderboard.webp",
+      src: "/image/feature-format/leaderboard.webp",
       alt: "Leaderboard",
       header: "Leaderboard",
       paragraph: "Compete for top rank, scored by whatever means you see fit.",
