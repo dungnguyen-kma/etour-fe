@@ -46,14 +46,14 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row gap-3 mt-5 mb-12">
           <div>
-            <Link key={"about-Signup"} href={"/signup"}>
+            <Link href={"/signup"}>
               <button className="text-white text-base bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
                 SIGN UP
               </button>
             </Link>
           </div>
           <div>
-            <Link key={"try-generator"} href={"/"}>
+            <Link href={"/"}>
               <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
                 <FontAwesomeIcon
                   icon={faRightToBracket}

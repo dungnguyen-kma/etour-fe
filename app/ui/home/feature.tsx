@@ -30,14 +30,14 @@ export default function Feature() {
             </p>
             <div className="flex flex-col md:flex-row gap-3 text-sm">
               <div>
-                <Link key={"play-video"} href={"/"}>
+                <Link  href={"/"}>
                   <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
                     PLAY VIDEO
                   </button>
                 </Link>
               </div>
               <div>
-                <Link key={"features"} href={"/"}>
+                <Link  href={"/"}>
                   <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2 text-center justify-center flex w-full gap-3">
                     <span className="self-center">FEARTURES</span>
                     <FontAwesomeIcon
