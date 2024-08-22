@@ -3,7 +3,7 @@ import { faChevronUp} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-export default function GuestFooter() {
+export default function Footer() {
   return (
     <div className="h-auto flex flex-col w-full">
       <div className="bg-[#484848] py-6 lg:px-12 px-4">
@@ -13,7 +13,7 @@ export default function GuestFooter() {
               <div className="bg-contain bg-no-repeat h-8 bg-[url(https://assets.challonge.com/_next/static/media/logo-white-text.928c8884.svg)]"></div>
             </Link>
           </div>
-          <div className="md:gap-2 gap-8 flex flex-wrap text-sm text-white">
+          <div className="md:gap-2 gap-4 flex flex-wrap text-sm text-white">
             <div>
               <Link href={"/"}>
                 <button className=" md:px-4 py-1.5 italic font-bold rounded-full  hover:bg-[#555]">
