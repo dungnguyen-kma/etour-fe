@@ -26,11 +26,11 @@ export default function Signin() {
                         name="username"
                         className="bg-[#2a2a2a]"
                         InputLabelProps={{
-                          className: "text-[#737373]",
+                          className: "text-[#999]",
                           sx: {
-                            color: "#737373",
+                            color: "#999",
                             "&.Mui-focused": {
-                              color: "#737373",
+                              color: "#999",
                             },
                           },
                         }}
@@ -48,11 +48,11 @@ export default function Signin() {
                         name="email"
                         className="bg-[#2a2a2a]"
                         InputLabelProps={{
-                          className: "text-[#737373]",
+                          className: "text-[#999]",
                           sx: {
-                            color: "#737373",
+                            color: "#999",
                             "&.Mui-focused": {
-                              color: "#737373",
+                              color: "#999",
                             },
                           },
                         }}
@@ -70,11 +70,11 @@ export default function Signin() {
                         name="phoneNumber"
                         className="bg-[#2a2a2a] "
                         InputLabelProps={{
-                          className: "text-[#737373]",
+                          className: "text-[#999]",
                           sx: {
-                            color: "#737373",
+                            color: "#999",
                             "&.Mui-focused": {
-                              color: "#737373",
+                              color: "#999",
                             },
                           },
                         }}
@@ -93,11 +93,11 @@ export default function Signin() {
                         name="password"
                         className="bg-[#2a2a2a]"
                         InputLabelProps={{
-                          className: "text-[#737373]",
+                          className: "text-[#999]",
                           sx: {
-                            color: "#737373",
+                            color: "#999",
                             "&.Mui-focused": {
-                              color: "#737373",
+                              color: "#999",
                             },
                           },
                         }}
@@ -116,11 +116,11 @@ export default function Signin() {
                         name="retypePassword"
                         className="bg-[#2a2a2a]"
                         InputLabelProps={{
-                          className: "text-[#737373]",
+                          className: "text-[#999]",
                           sx: {
-                            color: "#737373",
+                            color: "#999",
                             "&.Mui-focused": {
-                              color: "#737373",
+                              color: "#999",
                             },
                           },
                         }}
@@ -136,7 +136,7 @@ export default function Signin() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        className="bg-[#f8844a] italic font-bold text-base"
+                        className="bg-[#f8844a] hover:bg-[#f3752c] italic font-bold text-base rounded-full"
                       >
                         Sign Up
                       </Button>
