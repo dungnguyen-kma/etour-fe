@@ -13,7 +13,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import TournamentList from "./tournament-list";
 
 export default function Tournament() {
-  
   return (
     <div className="flex flex-col xl:flex-row gap-20 bg-gradient-to-tr from-[#3a3a3a] to-[#606060] -mt-20 px-6 pt-44 pb-20 lg:pl-32 lg:pr-6 border-t-[15px] border-t-[#484848] w-full max-w-[2200px]">
       <div className="flex flex-col gap-7 max-w-full lg:max-w-[600px] text-white">
@@ -30,25 +29,21 @@ export default function Tournament() {
           user experience has been developed with you in mind. Simple, quick,
           and reliable. That’s the Challonge difference.
         </p>
-        <div className="flex flex-col md:flex-row gap-3">
-          <div>
-            <Link key={"create-tour"} href={"/"}>
-              <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2.5 text-center">
-                CREATE A TOURNAMENT
-              </button>
-            </Link>
-          </div>
-          <div>
-            <Link key={"search-tour"} href={"/"}>
-              <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
-                <span className="self-center">SEARCH TOURNAMENTS</span>
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="size-5 self-center"
-                />
-              </button>
-            </Link>
-          </div>
+        <div className="flex flex-col md:flex-row gap-3 text-sm md:text-base">
+          <Link key={"create-tour"} href={"/"}>
+            <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2.5 text-center">
+              CREATE A TOURNAMENT
+            </button>
+          </Link>
+          <Link key={"search-tour"} href={"/"}>
+            <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
+              <span className="self-center">SEARCH TOURNAMENTS</span>
+              <FontAwesomeIcon
+                icon={faArrowRight}
+                className="size-5 md:size-6 self-center"
+              />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="bg-right-top bg-[url(https://assets.challonge.com/_next/static/media/reverse-bracket-bg.4c49a3cc.png)] bg-cover bg-no-repeat overflow-auto">
@@ -65,7 +60,7 @@ export default function Tournament() {
             36M+ Brackets Created
           </h2>
         </div>
-        <TournamentList/>
+        <TournamentList />
       </div>
     </div>
   );

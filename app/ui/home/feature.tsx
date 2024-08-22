@@ -28,7 +28,7 @@ export default function Feature() {
               to an ongoing tournament series or multi-day, world-class
               tournament with thousands of participants.
             </p>
-            <div className="flex flex-col md:flex-row gap-3 text-sm">
+            <div className="flex flex-col md:flex-row gap-3 text-sm md:text-base">
               <div>
                 <Link  href={"/"}>
                   <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
@@ -42,7 +42,7 @@ export default function Feature() {
                     <span className="self-center">FEARTURES</span>
                     <FontAwesomeIcon
                       icon={faArrowRight}
-                      className="size-5 self-center"
+                      className="size-5 md:size-6 self-center"
                     />
                   </button>
                 </Link>

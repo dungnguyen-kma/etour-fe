@@ -130,7 +130,7 @@ export default function TournamentList() {
                         <p className="text-base">{item.createAt}</p>
                       </div>
                     </div>
-                    <button className="text-lg text-white font-normal w-full h-12 min-w-12 pe-5 ps-5 gap-2 bg-gradient-to-b from-[#606060] to-[#484848] hover:bg-gradient-to-b hover:from-[#484848] hover:to-[#3a3a3a]">
+                    <button className="text-lg text-white font-bold w-full h-12 min-w-12 pe-5 ps-5 gap-2 bg-gradient-to-b from-[#606060] to-[#484848] hover:bg-gradient-to-b hover:from-[#484848] hover:to-[#3a3a3a]">
                       VIEW TOURNAMENT
                     </button>
                   </div>

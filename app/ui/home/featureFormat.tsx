@@ -30,7 +30,7 @@ export default function FeatureFormat() {
 
   return (
     <div className="w-full px-5 lg:px-20 max-w-[1600px] mx-auto">
-      <div className="flex flex-col md:flex-row text-[#7b7b7b] font-bold mb-8">
+      <div className="flex flex-col md:flex-row text-[#7b7b7b] font-bold mb-8 text-sm md:text-base">
         {formatData.map((item) => (
           <button
             key={item.name}

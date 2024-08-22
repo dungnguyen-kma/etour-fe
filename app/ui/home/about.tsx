@@ -44,27 +44,23 @@ export default function About() {
           organized, informed, and playing together. Take on the Challonge
           challenge, and game on!
         </div>
-        <div className="flex flex-col md:flex-row gap-3 mt-5 mb-12">
-          <div>
-            <Link href={"/signup"}>
-              <button className="text-white text-base bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
-                SIGN UP
-              </button>
-            </Link>
-          </div>
-          <div>
-            <Link href={"/"}>
-              <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
-                <FontAwesomeIcon
-                  icon={faRightToBracket}
-                  className="size-6 self-center"
-                />
-                <span className="text-base self-center">
-                  TRY OUR BRACKET GENERATOR
-                </span>
-              </button>
-            </Link>
-          </div>
+        <div className="flex flex-col md:flex-row gap-3 mt-5 mb-12 text-sm md:text-base">
+          <Link href={"/signup"}>
+            <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2 text-center">
+              SIGN UP
+            </button>
+          </Link>
+          <Link href={"/"}>
+            <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
+              <FontAwesomeIcon
+                icon={faRightToBracket}
+                className="md:size-6 size-5 self-center"
+              />
+              <span className="self-center">
+                TRY OUR BRACKET GENERATOR
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="lg:w-[62%] mt-12 lg:mt-0 pl-0">
@@ -91,8 +87,9 @@ export default function About() {
                       fill
                       sizes="100vw"
                       style={{
-                        objectFit: "cover"
-                      }} />
+                        objectFit: "cover",
+                      }}
+                    />
                   </SwiperSlide>
                 );
               })}

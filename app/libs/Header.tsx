@@ -45,6 +45,7 @@ export default function GuestHeader() {
               duration: 0.5,
               ease: "easeInOut",
             }}
+            onClick={() => setIsNavVisible(false)}
           >
             <motion.div
               className="w-fit h-screen bg-[#484848] flex flex-col items-end gap-6 text-white italic font-bold text-sm px-4"

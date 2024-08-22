@@ -20,13 +20,11 @@ export default function Community() {
           all from one place. Challonge Communities allow you to mobilize
           participants for frequent competitions. Get started for free.
         </p>
-        <div>
-          <Link key={"create-community"} href={"/"}>
-            <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full md:w-auto font-bold rounded-full italic px-10 py-2.5 text-center">
-              START YOUR COMMUNITY
-            </button>
-          </Link>
-        </div>
+        <Link key={"create-community"} href={"/"}>
+          <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full md:w-auto font-bold rounded-full italic px-10 py-2.5 text-center text-sm md:text-base">
+            START YOUR COMMUNITY
+          </button>
+        </Link>
       </div>
       <div className="overflow-auto">
         <div className="text-[#b4b4b4] flex flex-col-reverse md:flex-row items-start md:items-center gap-5 mb-10">
