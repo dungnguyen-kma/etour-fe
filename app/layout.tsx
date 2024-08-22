@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Archivo_Narrow, Inter } from "next/font/google";
 import "./globals.css";
-import GuestHeader from "./libs/guest-session/Header";
-import GuestFooter from "./libs/guest-session/Footer";
+import GuestHeader from "./libs/Header";
+import GuestFooter from "./libs/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const archivoNarrow = Archivo_Narrow({ subsets: ["latin"] });
