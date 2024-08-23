@@ -11,7 +11,7 @@ export default function NavLinks({ onClickLink }: any) {
     { id: 2, name: "TOURNAMENT", href: "/tournament" },
     { id: 3, name: "COMMUNITY", href: "/community" },
     { id: 4, name: "BRACKET GENERATOR", href: "/bracket-generator" },
-    { id: 5, name: "SIGNIN/SIGNUP", href: "/signin" },
+    { id: 5, name: "SIGNIN/SIGNUP", href: "/signup" },
   ];
   return (
     <>
