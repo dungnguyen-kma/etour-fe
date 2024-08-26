@@ -20,15 +20,57 @@ export default function Signin() {
               <div className="relative">
                 <input
                   type="text"
-                  id="username"
+                  id="firstname"
                   className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
                   placeholder=" "
                 />
                 <label
-                  htmlFor="username"
+                  htmlFor="firstname"
                   className="absolute text-sm text-[#999] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg[#2a2a2a] px-2 peer-focus:px-2 peer-focus:bg-[#2a2a2a] peer-focus:text-[#999] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1.5 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
                 >
-                  Username
+                  First name
+                </label>
+              </div>
+              <div className="relative">
+                <input
+                  type="text"
+                  id="lastname"
+                  className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="lastname"
+                  className="absolute text-sm text-[#999] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg[#2a2a2a] px-2 peer-focus:px-2 peer-focus:bg-[#2a2a2a] peer-focus:text-[#999] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1.5 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                >
+                  Last name
+                </label>
+              </div>
+              <div className="relative">
+                <input
+                  type="text"
+                  id="dateofbirth"
+                  className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="dateofbirth"
+                  className="absolute text-sm text-[#999] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg[#2a2a2a] px-2 peer-focus:px-2 peer-focus:bg-[#2a2a2a] peer-focus:text-[#999] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1.5 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                >
+                  Date of birth
+                </label>
+              </div>
+              <div className="relative">
+                <input
+                  type="text"
+                  id="address"
+                  className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="address"
+                  className="absolute text-sm text-[#999] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg[#2a2a2a] px-2 peer-focus:px-2 peer-focus:bg-[#2a2a2a] peer-focus:text-[#999] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1.5 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                >
+                  Address
                 </label>
               </div>
               <div className="relative">
