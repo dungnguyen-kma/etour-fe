@@ -6,14 +6,6 @@
   clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
 }
 
-.cp-partner-intro-polygon {
-  
-}
-
-.cp-partner-logo-polygon{
-  
-}
-
 @media screen and (min-width: 1024px) {
   .cp-path-polygon {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 280px 100%);
