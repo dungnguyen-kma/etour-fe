@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import SearchInput from "../ui/tournament/searchInput";
 import SideBar from "../ui/tournament/sideBar";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,20 +14,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="px-4 lg:px-10 flex-grow min-h-[calc(100vh-48px)] max-w-[100vw]">
               <div className="relative">
                 <SearchInput />
-                <button
+                <Link 
+                  href={"/signup"}
                   type="submit"
-                  className="text-white bg-[#f8844a] hover:bg-[#f3752c] absolute end-2.5 bottom-2.5 focus:ring-4 font-medium rounded-full text-base px-4 py-2"
+                  className="text-white bg-[#f8844a] hover:bg-[#f3752c] absolute end-2.5 bottom-2.5 font-medium rounded-full text-base px-4 py-2"
                 >
                   Create Tournament
-                </button>
+                </Link>
               </div>
-
               <div className="flex flex-row mt-8">
-                <div className=" w-64 h-screen bg-[#2a2a2a] mr-4">
+                <div className="sticky top-14 w-64 h-screen bg-[#2a2a2a] mr-4">
                   <SideBar />
                 </div>
-                <div className="w-full h-screen bg-transparent border-l-2 border-dashed border-[#f3732966]">
-                  <div className="w-full h-full bg-[#2a2a2a] ml-4 overflow-y-scroll">
+                <div className="w-full bg-transparent border-l-2 border-dashed border-[#f3732966]">
+                  <div className="w-[calc(100%-16px)] h-full bg-[#2a2a2a] ml-4">
                     {children}
                   </div>
                 </div>

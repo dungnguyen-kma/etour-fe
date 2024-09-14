@@ -11,9 +11,9 @@ import {
 
 export default function Tournament() {
   return (
-    <div className="grid grid-cols-4 gap-y-6 gap-x-4">
+    <div className=" px-4 pt-2 grid grid-cols-4 gap-y-6 gap-x-4">
       <div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -54,7 +54,7 @@ export default function Tournament() {
         </div>
       </div>
       <div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -94,7 +94,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -134,7 +134,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -174,7 +174,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -214,7 +214,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -254,7 +254,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -294,7 +294,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -334,7 +334,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -374,7 +374,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
@@ -414,7 +414,7 @@ export default function Tournament() {
           </div>
         </div>
       </div><div className="min-w-full md:min-w-[340px]">
-        <div className="h-full p-1 border-transparent hover:rounded-2xl">
+        <div className="h-full border-transparent hover:rounded-2xl">
           <div className="flex flex-col gap-0 h-[calc(100%-8px)] rounded-2xl border border-black bg-[#191919] text-lg overflow-hidden">
             <Image
               src="/image/carousel/Badminton.webp"
