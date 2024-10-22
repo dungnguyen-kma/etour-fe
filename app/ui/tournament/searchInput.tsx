@@ -17,7 +17,7 @@ export default function SearchInput() {
         <input
           type="search"
           id="default-search"
-          className="block p-4 ps-10 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
+          className="block p-4 ps-10 w-full text-sm text-white bg-[#363636] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
           placeholder="Search tournament...."
           required
         />

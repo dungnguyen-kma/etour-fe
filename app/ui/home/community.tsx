@@ -11,7 +11,7 @@ import CommunityList from "./community-list";
 export default function Community() {
   return (
     <div className="flex flex-col xl:flex-row gap-20 bg-gradient-to-tr from-[#313131] to-[#606060] w-full pb-20 pt-24 px-6 lg:pl-32 border-t-[15px] border-t-[#484848] max-w-[2200px]">
-      <div className="flex flex-col gap-7 max-w-full lg:max-w-[600px] min-w-full sm:min-w-[450px] text-white">
+      <div className="flex flex-col gap-7 max-w-full lg:max-w-[600px] min-w-full sm:min-w-[600px] text-white">
         <h2 className="text-3xl md:text-5xl italic font-bold leading-[2.375rem] md:leading-[3.75rem] tracking-tighter">
           Build and Manage Your Community
         </h2>

@@ -50,17 +50,6 @@ export default function About() {
               SIGN UP
             </button>
           </Link>
-          <Link href={"/bracket-generator"}>
-            <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
-              <FontAwesomeIcon
-                icon={faRightToBracket}
-                className="md:size-6 size-5 self-center"
-              />
-              <span className="self-center">
-                TRY OUR BRACKET GENERATOR
-              </span>
-            </button>
-          </Link>
         </div>
       </div>
       <div className="lg:w-[62%] mt-12 lg:mt-0 pl-0">

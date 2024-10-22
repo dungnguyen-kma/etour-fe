@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./libs/Header";
 import Footer from "./libs/Footer";
+import { ReactQueryProvider } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -19,7 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <div className="bg-[#2a2a2a]">
+          <div className="max-w-screen-2xl mx-auto">
+            <ReactQueryProvider>{children}</ReactQueryProvider>
+          </div>
+        </div>
         <Footer />
       </body>
     </html>

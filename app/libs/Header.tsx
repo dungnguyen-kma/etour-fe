@@ -10,16 +10,13 @@ import { useBreakPoint } from "../hooks/useBreakPoint";
 
 export default function Header() {
   const [isNavVisible, setIsNavVisible] = useState(false);
-  const { sm, md, lg, xl, xxl } = useBreakPoint();
+  const { lg } = useBreakPoint();
 
   useEffect(() => {
-    console.log(lg);
-    if (lg) {
-      setIsNavVisible(true);
-    } else {
-      setIsNavVisible(false);
-    }
+    setIsNavVisible(lg);
   }, [lg]);
+
+  const toggleNav = () => setIsNavVisible(!isNavVisible);
 
   return (
     <div className="bg-[#484848] shadow-md h-14 lg:h-16 flex flex-row fixed top-0 w-full justify-between lg:py-3.5 py-3 z-20 mb-24">
@@ -31,7 +28,7 @@ export default function Header() {
       {!lg && (
         <div
           className="px-4 text-white my-auto flex items-center"
-          onClick={() => setIsNavVisible(!isNavVisible)}
+          onClick={toggleNav}
         >
           <FontAwesomeIcon icon={faBars} className="size-6" />
         </div>
@@ -52,7 +49,7 @@ export default function Header() {
               duration: 0.5,
               ease: "easeInOut",
             }}
-            onClick={() => !lg && setIsNavVisible(false)}
+            onClick={() => !lg && toggleNav()}
           >
             <motion.div
               className="w-fit h-screen bg-[#484848] flex flex-col items-end gap-6 text-white italic font-bold text-sm px-4 lg:px-0 lg:text-base lg:flex-row lg:items-center lg:h-auto"
@@ -66,7 +63,7 @@ export default function Header() {
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
-              <NavLinks onClickLink={() => !lg && setIsNavVisible(false)} />
+              <NavLinks onClickLink={() => !lg && toggleNav()} />
             </motion.div>
           </motion.div>
         )}

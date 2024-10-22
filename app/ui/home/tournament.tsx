@@ -35,7 +35,7 @@ export default function Tournament() {
               CREATE A TOURNAMENT
             </button>
           </Link>
-          <Link key={"search-tour"} href={"/"}>
+          <Link key={"search-tour"} href={"/tournament"}>
             <button className="text-white hover:bg-[#555] font-bold rounded-full italic px-5 py-2.5 text-center justify-center flex w-full gap-3">
               <span className="self-center">SEARCH TOURNAMENTS</span>
               <FontAwesomeIcon
