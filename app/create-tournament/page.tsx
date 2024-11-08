@@ -3,14 +3,14 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Checkbox, Datepicker, Dropdown } from "flowbite-react";
 
-export default function UserProfile() {
+export default function CreateTournament() {
   return (
     <div className="gap-6 flex flex-col">
       <h2 className="text-2xl text-white italic font-bold relative after:absolute after:bottom-0 after:left-0 after:content-[' '] after:border-b-[#f8844a] after:border-b-2 after:w-36 ">
         Tournament Info
       </h2>
 
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="host" className="basis-56 text-white mx-0">
           host
         </label>
@@ -21,7 +21,7 @@ export default function UserProfile() {
           placeholder=" "
         />
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="tourname" className="basis-56 text-white mx-0">
           tournament name
         </label>
@@ -32,7 +32,7 @@ export default function UserProfile() {
           placeholder=" "
         />
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="starttime" className="basis-56 text-white mx-0">
           start time
         </label>
@@ -58,7 +58,7 @@ export default function UserProfile() {
           </div>
         </div>
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="desc" className="basis-56 text-white mx-0">
           description
         </label>
@@ -68,7 +68,7 @@ export default function UserProfile() {
           className="block px-2.5 py-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none"
         ></textarea>
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="gamename" className="basis-56 text-white mx-0">
           game
         </label>
@@ -79,7 +79,7 @@ export default function UserProfile() {
           placeholder=" "
         />
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="format" className="basis-56 text-white mx-0">
           format
         </label>
@@ -96,7 +96,7 @@ export default function UserProfile() {
           <Dropdown.Item>Two stage</Dropdown.Item>
         </Dropdown>
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label className="basis-56 text-white mx-0">format</label>
         <Dropdown
           label="Single elimination"
@@ -113,7 +113,7 @@ export default function UserProfile() {
           <Dropdown.Item>Swiss</Dropdown.Item>
         </Dropdown>
       </div>
-      <div className="wrapper flex justify-between">
+      <div className="flex justify-between">
         <label htmlFor="participants" className="basis-56 text-white mx-0">
           participants
         </label>
