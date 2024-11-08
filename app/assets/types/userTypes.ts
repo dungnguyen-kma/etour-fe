@@ -3,10 +3,14 @@ export interface userSignup {
   email: string;
   cellphone: number;
   fullname: string;
-  sex: string;
-  dob: Date;
+  sex: number;
+  dob: string;
   address: string;
   address2: string;
   password: string;
-  password2: string
+}
+
+export interface userSignin {
+  user_name: string;
+  password: string;
 }
