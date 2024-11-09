@@ -11,6 +11,6 @@ export interface userSignup {
 }
 
 export interface userSignin {
-  user_name: string;
+  user_name: string | null;
   password: string;
 }
