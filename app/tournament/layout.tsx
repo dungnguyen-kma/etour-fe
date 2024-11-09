@@ -1,21 +1,18 @@
 "use client"
 
 import { Inter } from "next/font/google";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import SearchInput from "../ui/tournament/searchInput";
 import SideBar from "../ui/tournament/sideBar";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const TournamentContext = createContext<any>(null);
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [selectedTournament, setSelectedTournament] = useState({});
   return (
-    <TournamentContext.Provider
-      value={{ selectedTournament, setSelectedTournament }}
-    >
+    <>
       <div className={inter.className}>
         <div className="flex flex-col items-center justify-between lg:mt-16 mt-14">
           <div className="w-full bg-[#323232] my-0 mx-auto">
@@ -46,6 +43,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </div>
-    </TournamentContext.Provider>
+    </>
   );
 }

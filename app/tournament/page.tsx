@@ -1,13 +1,4 @@
-import Image from "next/image";
-import SideBar from "../ui/tournament/sideBar";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCalendar,
-  faEarthAsia,
-  faTrophy,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+
 import TournamentList from "../ui/tournament/tournament-list";
 
 export default function Tournament() {

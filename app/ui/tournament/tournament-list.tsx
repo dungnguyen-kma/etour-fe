@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import React from "react";
 import {
   faCalendar,
   faEarthAsia,
@@ -10,12 +10,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import { TournamentContext } from "@/app/tournament/layout";
 
 export default function TournamentList() {
-  const { setSelectedTournament } = useContext(TournamentContext);
-
-  console.log(setSelectedTournament);
 
   const listData = [
     {
@@ -119,7 +115,6 @@ export default function TournamentList() {
                 <Link
                   href={`tournament/${item.name}`}
                   className="text-base text-white flex justify-center items-center font-bold w-full rounded-full italic h-12 min-w-12 pe-5 ps-5 gap-2 bg-gradient-to-b from-[#606060] to-[#484848] hover:bg-gradient-to-b hover:from-[#484848] hover:to-[#3a3a3a]"
-                  onClick={() => setSelectedTournament(item)}
                 >
                   VIEW
                 </Link>

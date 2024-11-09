@@ -4,13 +4,11 @@ import { useContext } from "react";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { TournamentContext } from "../layout";
 import DetailOverview from "@/app/ui/tournament/tournament-details/overview";
 import Ranking from "@/app/ui/tournament/tournament-details/ranking";
 import TourBracket from "@/app/ui/tournament/tournament-details/bracket";
 
 export default function TournamentDetails({ params }: any) {
-  const { selectedTournament } = useContext(TournamentContext);
   return (
     <div className="flex flex-col h-full px-3 py-4">
       <div className="tournament-detail">
@@ -26,7 +24,7 @@ export default function TournamentDetails({ params }: any) {
             {decodeURIComponent(params.tournamentName)}
           </h2>
         </div>
-        <DetailOverview data={selectedTournament} />
+        <DetailOverview />
         <TourBracket />
         <Ranking />
       </div>
