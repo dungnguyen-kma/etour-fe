@@ -150,7 +150,7 @@ export default function Signup() {
                   id="dateofbirth"
                   name="dob"
                   className="w-full text-base text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
-                  onChange={handleDateChange}
+                  onChange={() => handleDateChange}
                   required
                   value={
                     formData.dob
