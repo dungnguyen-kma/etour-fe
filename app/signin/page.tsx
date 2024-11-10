@@ -30,7 +30,7 @@ export default function Signin() {
       toast.success("successfully Signin");
       localStorage.setItem("user", data);
     },
-    onError: (err) => {
+    onError: (err:any) => {
       toast.error("" + err?.detail);
     },
   });
