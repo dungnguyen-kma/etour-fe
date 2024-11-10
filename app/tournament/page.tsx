@@ -1,5 +1,5 @@
 
-import TournamentList from "../ui/tournament/tournament-list";
+import TournamentList from "../ui/tournament/TournamentList";
 
 export default function Tournament() {
   return (

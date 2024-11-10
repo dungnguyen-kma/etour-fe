@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { userSignin, userSignup } from "../assets/types/userTypes";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { userSigninService } from "../api/signup/userApi";
+import { userSigninService } from "../api/user/userApi";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

@@ -1,9 +1,9 @@
-import About from "./ui/home/about";
-import Community from "./ui/home/community";
-import Feature from "./ui/home/feature";
+import About from "./ui/home/About";
+import Community from "./community/page";
+import Feature from "./ui/home/Feature";
 import './ui/home/home.css'
-import Pricing from "./ui/home/pricing";
-import Tournament from "./ui/home/tournament"
+import Pricing from "./ui/home/Pricing";
+import Tournament from "./ui/home/Tournament";
 
 export default function Home() {
   return (

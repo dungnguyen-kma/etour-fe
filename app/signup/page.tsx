@@ -9,9 +9,9 @@ import {
   validatePhoneNumber,
 } from "../assets/ultis/validateForm";
 import { Datepicker, Dropdown } from "flowbite-react";
-import { convertNowToYYYYMMDD } from "../assets/ultis/formatDate";
+import { convertDateToYYYYMMDD } from "../assets/ultis/formatDate";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { userSignupService } from "../api/signup/userApi";
+import { userSignupService } from "../api/user/userApi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -65,7 +65,7 @@ export default function Signup() {
   const handleDateChange = (selectedDate: Date) => {
     setFormData((prev: any) => ({
       ...formData,
-      dob: convertNowToYYYYMMDD(selectedDate),
+      dob: convertDateToYYYYMMDD(selectedDate),
     }));
   };
 

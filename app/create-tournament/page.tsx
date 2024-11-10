@@ -81,10 +81,10 @@ export default function CreateTournament() {
       </div>
       <div className="flex justify-between">
         <label htmlFor="format" className="basis-56 text-white mx-0">
-          format
+          stage format
         </label>
         <Dropdown
-          label="Single elimination"
+          label="Single Stage"
           renderTrigger={() => (
             <button className="w-full text-left px-2.5 py-4 text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none flex justify-between items-center">
               <span>Single stage</span>

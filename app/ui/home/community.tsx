@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import CommunityList from "./community-list";
+import CommunityList from "./CommunityList";
 
 export default function Community() {
   return (

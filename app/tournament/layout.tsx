@@ -2,8 +2,8 @@
 
 import { Inter } from "next/font/google";
 import { useState } from "react";
-import SearchInput from "../ui/tournament/searchInput";
-import SideBar from "../ui/tournament/sideBar";
+import SearchInput from "../ui/tournament/SearchInput";
+import SideBar from "../ui/tournament/SideBar";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });

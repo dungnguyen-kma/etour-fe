@@ -6,11 +6,8 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Link from "next/link";
-import { EffectCoverflow, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import TournamentList from "./tournament-list";
+import TournamentSlide from "./TournamentSlide";
 
 export default function Tournament() {
   return (
@@ -30,7 +27,7 @@ export default function Tournament() {
           and reliable. That’s the Challonge difference.
         </p>
         <div className="flex flex-col md:flex-row gap-3 text-sm md:text-base">
-          <Link key={"create-tour"} href={"/"}>
+          <Link key={"create-tour"} href={"/create-tournament"}>
             <button className="text-white bg-[#f8844a] hover:bg-[#f3752c] w-full font-bold rounded-full italic px-10 py-2.5 text-center">
               CREATE A TOURNAMENT
             </button>
@@ -60,7 +57,7 @@ export default function Tournament() {
             36M+ Brackets Created
           </h2>
         </div>
-        <TournamentList />
+        <TournamentSlide />
       </div>
     </div>
   );

@@ -2,8 +2,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
-import FeatureFormat from "./featureFormat";
-import Partner from "./partner";
+import FeatureFormat from "./FeatureFormat";
+import Partner from "./Partner";
 
 export default function Feature() {
   return (

@@ -1,15 +1,11 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import clsx from "clsx";
-import { usePathname } from "next/navigation";
-import BasicFormat from "./basic-format";
-import AdvancedFormat from "./advanced-format";
+import BasicFormat from "./BasicFormat";
+import AdvancedFormat from "./AdvancedFormat";
 import { useState } from "react";
 
 export default function FeatureFormat() {
-  const pathname = usePathname();
   const [selectedComponent, setSelectedComponent] =
     useState<any>("BasicFormat");
 

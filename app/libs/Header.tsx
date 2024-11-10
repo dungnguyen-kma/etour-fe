@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import NavLinks from "./nav-links";
+import NavLinks from "./NavLinks";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
