@@ -10,17 +10,13 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const initialState: userSignin = {
-  user_name: localStorage.getItem("rememberUsername")
-    ? localStorage.getItem("rememberUsername")
-    : "",
+  user_name: "",
   password: "",
 };
 
 export default function Signin() {
   const [formData, setFormData] = useState(initialState);
-  const [isCheckedRemember, setIscheckedRemember] = useState(
-    localStorage.getItem("rememberUsername") ? true : false
-  );
+  const [isCheckedRemember, setIscheckedRemember] = useState(false);
 
   const queryClient = useQueryClient();
 
@@ -28,9 +24,8 @@ export default function Signin() {
     mutationFn: (formData: userSignin) => userSigninService(formData),
     onSuccess: (data) => {
       toast.success("successfully Signin");
-      localStorage.setItem("user", data);
     },
-    onError: (err:any) => {
+    onError: (err: any) => {
       toast.error("" + err?.detail);
     },
   });
@@ -42,11 +37,6 @@ export default function Signin() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if (isCheckedRemember) {
-      localStorage.setItem("rememberUsername", formData?.user_name);
-    } else {
-      localStorage.removeItem("rememberUsername");
-    }
     signinMutation.mutate(formData);
     setFormData(initialState);
   };
@@ -73,11 +63,7 @@ export default function Signin() {
             className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-[#2a2a2a] rounded-sm border border-[#2a2a2a] appearance-none hover:border-[#f3732966] focus:border-[#f37329e6] focus:outline-none peer"
             placeholder=" "
             onChange={handleInputChange}
-            value={
-              formData?.user_name ||
-              localStorage.getItem("rememberUsername") ||
-              ""
-            }
+            value={formData?.user_name || ""}
             required
           />
           <label
